@@ -1,9 +1,11 @@
 node-antigate
 -------------
 
+[![NPM](https://nodei.co/npm/antigate.png?downloads=true&stars=true)](https://nodei.co/npm/antigate/)
+
 antigate.com API client for node.js
 
-[Module homepage at bitbucket.org](https://bitbucket.org/ssbb/node-antigate)
+[Module homepage at github.com](https://github.com/ssbb/node-antigate)
 
 How to install
 --------------
