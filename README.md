@@ -41,6 +41,15 @@ ag.processFromFile('CAPTCHA_FILE_PATH', function(error, text, id) {
   }
 });
 
+ag.processFromFileWithComment('CAPTCHA_FILE_PATH', 'comment', function(error, text, id) {
+  if (error) {
+    throw error;
+  } else {
+    console.log(text);
+  }
+});
+
+
 // Recognize the captcha from base64 string
 ag.process('BASE_64_STRING', function(error, text, id) {
   if (error) {
