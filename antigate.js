@@ -24,7 +24,15 @@ Antigate.prototype.process = function (data, callback) {
 Antigate.prototype.processWithComment = function (data, comment, callback) {
     var self = this;
 
-    self.uploadWithComment()
+    self.uploadWithComment(data, comment, function(error, captchaId) {
+        self.check(captchaId, function (error, captchaText) {
+            if (error) {
+                callback(error, null, null);
+            } else {
+                callback(null, captchaText, captchaId);
+            }
+        });
+    })
 };
 
 Antigate.prototype.processFromFile = function (filename, callback) {
