@@ -41,6 +41,7 @@ ag.processFromFile('CAPTCHA_FILE_PATH', function(error, text, id) {
   }
 });
 
+// Recognize the captcha from file(better for google captcha)
 ag.processFromFileWithComment('CAPTCHA_FILE_PATH', 'comment', function(error, text, id) {
   if (error) {
     throw error;
